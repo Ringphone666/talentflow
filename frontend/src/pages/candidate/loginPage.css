@@ -1,0 +1,5 @@
+.login-card .login-locked { margin: -4px 0 16px; }
+.login-card .login-locked .ant-alert-description { overflow-wrap: anywhere; }
+.login-card .login-onsite-link { margin-top: 16px; text-align: center; font-size: 13px; line-height: 22px; }
+.login-current { margin-bottom: 20px; }
+.login-current .ant-alert-description .ant-btn { margin-top: 8px; }

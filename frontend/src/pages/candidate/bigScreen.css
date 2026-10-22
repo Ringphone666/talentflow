@@ -1,0 +1,20 @@
+/* 大屏显示：会议室智慧屏或投屏时，页面按屏幕大小等比放大（倍数由 bigScreen.ts 计算）。 */
+html.big-screen body { zoom: var(--screen-zoom, 1); }
+/* 放大后视口高度要按倍数折算，否则页面会比屏幕高出一截。 */
+html.big-screen body,
+html.big-screen .candidate-page,
+html.big-screen .candidate-loading { min-height: calc(100vh / var(--screen-zoom, 1)); }
+html.big-screen .candidate-page .candidate-shell { display: flex; flex-direction: column; width: min(calc(100% - 48px), 1200px); margin: 14px auto; }
+html.big-screen .candidate-page .candidate-steps { width: 100%; margin-bottom: 12px; }
+/* 作答时题目和录音两栏占满屏幕余下的高度，旁边的人也能看清题目和实时转写。 */
+html.big-screen .candidate-page .interview-stage { flex: 1; grid-template-rows: auto minmax(0, 1fr); }
+html.big-screen .candidate-page .question-card { min-height: 300px; }
+html.big-screen .candidate-page .question-text { max-width: none; font-size: 30px !important; line-height: 1.6 !important; }
+html.big-screen .candidate-page .recording-status,
+html.big-screen .candidate-page .live-transcript { font-size: 17px; }
+html.big-screen .candidate-page .live-transcript-text { max-height: 200px; line-height: 1.7; }
+html.big-screen .candidate-page .countdown { font-size: 24px; }
+html.big-screen .candidate-page .recording-help { display: none; }
+html.big-screen .candidate-page .candidate-footer { padding: 6px 16px; }
+/* 现场名单：每行多放几位候选人。 */
+html.big-screen .onsite-page .onsite-card { max-width: 1200px; }

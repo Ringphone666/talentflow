@@ -1,0 +1,82 @@
+/* AI面试管理端（批次与题目、候选人管理、面试报告、候选人对比）的页面私有样式。 */
+
+.interview-batch-select { width: 300px; max-width: 100%; }
+
+/* ---- 批次与题目 ---- */
+.interview-batch-item .ant-list-item-meta { min-width: 0; }
+.interview-batch-meta { overflow-wrap: anywhere; line-height: 1.7; }
+.interview-batch-actions { margin: 2px 0 0 -7px; }
+.interview-question-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 6px; color: var(--text-secondary); font-size: 12px; }
+.interview-question-meta .ant-tag { margin-inline-end: 0; }
+.interview-form-note { margin: -12px 0 20px; }
+.interview-form-note .interview-form-note { margin: 8px 0 0; }
+.interview-mode-options { display: grid; gap: 10px; }
+.interview-mode-options .ant-radio-wrapper { align-items: flex-start; margin: 0; white-space: normal; }
+.interview-mode-options .ant-radio { margin-top: 3px; }
+.interview-mode-label { display: block; font-weight: 500; }
+.interview-mode-note { display: block; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
+.interview-onsite-link { margin: 16px 0 10px; padding: 10px 12px; border: 1px dashed #b2ddd4; border-radius: 8px; background: var(--brand-soft); font-family: Consolas, "Courier New", monospace; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; user-select: all; }
+.interview-onsite-note { margin: 12px 0 0 !important; color: var(--text-secondary); }
+
+/* ---- 候选人管理 ---- */
+.interview-resume-cell { display: grid; gap: 4px; min-width: 0; }
+.interview-resume-name { font-weight: 500; }
+.interview-resume-progress { color: var(--text-secondary); font-size: 12px; }
+.interview-cell-actions { margin-left: -7px; }
+.interview-cell-actions .interview-cell-link { padding: 0 7px; }
+.interview-progress-cell { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 6px; align-items: center; color: var(--text-secondary); font-size: 12px; }
+.interview-progress-cell .ant-tag { margin-inline-end: 0; }
+.interview-credential-address { margin: 12px 0 0 !important; overflow-wrap: anywhere; }
+.interview-credential-table { margin-top: 12px; }
+.interview-credential-table .interview-credential-secret { font-family: Consolas, "Courier New", monospace; font-size: 15px; letter-spacing: .5px; user-select: all; overflow-wrap: anywhere; }
+.interview-credential-modal .credential-box { margin-top: 12px; }
+.interview-credential-modal .credential-box dl { margin: 0; }
+.interview-scan-list { margin: 12px 0 0; padding-left: 20px; }
+.interview-picker-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.interview-picker-filters .ant-select { width: 100%; }
+
+/* ---- 面试报告 ---- */
+.interview-report-table .interview-report-error { color: var(--danger); }
+.interview-report-note { margin: 0 0 12px !important; color: var(--text-secondary); font-size: 12px; }
+.interview-report-list { margin: 0; padding-left: 20px; }
+.interview-report-list li + li { margin-top: 6px; }
+.interview-qa-item { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.interview-qa-item:first-child { padding-top: 0; }
+.interview-qa-item:last-child { padding-bottom: 0; border-bottom: 0; }
+.interview-qa-question { font-weight: 500; }
+.interview-finding-item { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.interview-finding-item:first-child { padding-top: 0; }
+.interview-finding-item:last-child { padding-bottom: 0; border-bottom: 0; }
+.interview-finding-label { display: block; margin-top: 8px; color: var(--text-secondary); font-size: 12px; }
+.interview-transcript-line { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.interview-transcript-line:last-child { border-bottom: 0; }
+.interview-drawer-actions { justify-content: flex-end; }
+
+/* ---- 候选人对比 ---- */
+.interview-comparison-filters { display: grid; grid-template-columns: minmax(0, 1fr) 200px auto; gap: 12px; align-items: end; }
+.interview-comparison-filters .ant-select { width: 100%; }
+.interview-comparison-label { display: block; margin-bottom: 4px; color: var(--text-secondary); font-size: 12px; }
+.interview-comparison-actions { justify-content: flex-end; }
+.interview-without-report { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; padding: 0; list-style: none; }
+.interview-without-report li { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.interview-without-report .ant-tag { margin-inline-end: 0; }
+.interview-chart-scroll { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; }
+.interview-comparison-note { margin: 8px 0 0 !important; color: var(--text-secondary); font-size: 12px; }
+.interview-chart-tooltip { padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: var(--shadow-md); font-size: 12px; line-height: 1.8; }
+.interview-chart-tooltip-title { margin-bottom: 4px; color: #222; font-size: 13px; font-weight: 600; }
+.interview-chart-tooltip-row { display: flex; align-items: center; gap: 8px; color: var(--text-secondary); }
+.interview-chart-tooltip-row strong { margin-left: auto; padding-left: 16px; color: #222; }
+.interview-chart-key { width: 12px; height: 3px; flex: none; border-radius: 2px; }
+.interview-comparison-table .interview-risk-list { margin: 0; padding-left: 18px; }
+.interview-comparison-table .interview-risk-list li + li { margin-top: 4px; }
+
+@media (max-width: 767px) {
+  .interview-batch-select { width: 100%; }
+  .interview-picker-filters { grid-template-columns: minmax(0, 1fr); }
+  .interview-comparison-filters { grid-template-columns: minmax(0, 1fr); }
+  .interview-comparison-actions { justify-content: flex-start; }
+  .interview-transcript-line { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+.interview-transcript-turns { border-bottom: 1px solid var(--line); }
+.interview-transcript-turns:last-child { border-bottom: 0; }
+.interview-transcript-turns .interview-transcript-line { grid-template-columns: 136px minmax(0, 1fr); border-bottom: 0; padding: 6px 0; }

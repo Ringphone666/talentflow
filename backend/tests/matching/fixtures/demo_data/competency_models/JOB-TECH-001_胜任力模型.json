@@ -1,0 +1,56 @@
+{
+  "disclaimer": "仅用于系统演示，内容纯属虚构",
+  "job": "高级后端开发工程师",
+  "dimensions": [
+    {
+      "name": "后端工程能力",
+      "keywords": [
+        "Python",
+        "Java",
+        "FastAPI",
+        "Spring Boot",
+        "微服务"
+      ]
+    },
+    {
+      "name": "系统架构能力",
+      "keywords": [
+        "高并发",
+        "架构设计",
+        "Kafka",
+        "Redis",
+        "分布式"
+      ]
+    },
+    {
+      "name": "数据与性能",
+      "keywords": [
+        "MySQL",
+        "PostgreSQL",
+        "SQL优化",
+        "性能优化",
+        "缓存"
+      ]
+    },
+    {
+      "name": "交付与质量",
+      "keywords": [
+        "单元测试",
+        "CI/CD",
+        "可观测性",
+        "SLA",
+        "故障复盘"
+      ]
+    },
+    {
+      "name": "协作与领导",
+      "keywords": [
+        "技术评审",
+        "带领",
+        "跨团队",
+        "指导",
+        "项目负责人"
+      ]
+    }
+  ]
+}

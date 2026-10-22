@@ -1,0 +1,35 @@
+{
+  "name": "talentflow-hr-platform-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173 --configLoader runner",
+    "preview": "vite preview --host 127.0.0.1 --port 5173 --configLoader runner",
+    "build": "tsc -b && vite build --configLoader runner",
+    "test": "vitest run --configLoader runner",
+    "test:watch": "vitest --configLoader runner"
+  },
+  "dependencies": {
+    "@ant-design/icons": "5.6.1",
+    "@ant-design/v5-patch-for-react-19": "1.0.3",
+    "antd": "5.27.1",
+    "dayjs": "1.11.13",
+    "lamejs": "1.2.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-router-dom": "6.30.1",
+    "recharts": "3.1.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.8.0",
+    "@testing-library/react": "16.3.0",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "@vitejs/plugin-react": "5.0.2",
+    "jsdom": "26.1.0",
+    "typescript": "5.9.2",
+    "vite": "7.1.3",
+    "vitest": "3.2.4"
+  }
+}

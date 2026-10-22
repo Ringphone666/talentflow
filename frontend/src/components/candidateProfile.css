@@ -1,0 +1,42 @@
+.candidate-profile-card {
+  max-width: 880px;
+  margin: 0 auto;
+  border-color: var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+.candidate-profile-card .ant-card-body { padding: 36px 40px 28px; }
+.candidate-profile-heading { display: flex; align-items: flex-start; gap: 18px; }
+.candidate-profile-icon { display: grid; place-items: center; width: 52px; height: 52px; flex: 0 0 52px; border-radius: 14px; font-size: 24px; color: var(--brand); background: var(--brand-light); }
+.candidate-profile-eyebrow { color: var(--brand); font-size: 12px; font-weight: 600; letter-spacing: .08em; }
+.candidate-profile-heading h2.ant-typography { margin: 4px 0 8px; font-size: 28px; }
+.candidate-profile-heading .ant-typography:last-child { margin-bottom: 0; color: var(--text-secondary); line-height: 1.7; }
+.candidate-profile-identity { display: flex; flex-wrap: wrap; gap: 16px 40px; margin: 24px 0 28px; padding: 16px 20px; background: var(--brand-soft); border: 1px solid #dfede9; border-radius: 10px; }
+.candidate-profile-identity > div { display: flex; align-items: baseline; gap: 12px; min-width: 0; }
+.candidate-profile-identity dt { flex-shrink: 0; color: var(--text-secondary); font-size: 13px; }
+.candidate-profile-identity dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+.candidate-profile-section-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 16px; }
+.candidate-profile-section-title h3 { font-size: 16px; margin: 0; }
+.candidate-profile-section-title span { color: var(--text-secondary); font-size: 12px; }
+.candidate-profile-form section + section { border-top: 1px solid var(--line); padding-top: 24px; }
+.candidate-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+.candidate-profile-grid .ant-form-item { min-width: 0; margin-bottom: 24px; }
+.candidate-profile-grid .ant-input-prefix { color: #76928b; margin-right: 10px; }
+.candidate-profile-grid .ant-form-item-extra { padding-top: 6px; font-size: 12px; }
+.candidate-profile-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 24px; border-top: 1px solid var(--line); }
+.candidate-profile-footer > div { display: grid; gap: 4px; }
+.candidate-profile-footer strong { font-size: 13px; font-weight: 500; }
+.candidate-profile-footer span { color: var(--text-secondary); font-size: 12px; }
+.candidate-profile-footer .ant-btn { min-width: 160px; flex-shrink: 0; }
+.candidate-profile-footer .ant-btn span { color: inherit; font-size: 15px; }
+.candidate-profile-form > .ant-alert { margin-bottom: 20px; }
+@media (max-width: 600px) {
+  .candidate-profile-card .ant-card-body { padding: 24px 18px; }
+  .candidate-profile-heading { gap: 12px; }
+  .candidate-profile-icon { width: 40px; height: 40px; flex-basis: 40px; font-size: 20px; border-radius: 10px; }
+  .candidate-profile-heading h2.ant-typography { font-size: 23px; }
+  .candidate-profile-identity { padding: 14px; gap: 10px 24px; margin: 20px 0 24px; }
+  .candidate-profile-grid { grid-template-columns: minmax(0, 1fr); }
+  .candidate-profile-footer { align-items: stretch; flex-direction: column; gap: 16px; padding-top: 20px; }
+  .candidate-profile-footer .ant-btn { width: 100%; }
+}

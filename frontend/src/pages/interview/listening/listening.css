@@ -1,0 +1,61 @@
+/* AI旁听页面私有样式。长文本统一用公共的 evidence-text，完整换行显示。 */
+.listening-batch-select { width: 360px; max-width: 100%; }
+.listening-candidate-search { width: 260px; max-width: 100%; }
+.listening-workspace-title { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 20px 0 12px; }
+.listening-workspace-title h3.ant-typography { margin: 0; overflow-wrap: anywhere; }
+.listening-references > .ant-collapse-item > .ant-collapse-header { font-weight: 600; }
+.listening-references, .listening-resume-text { background: #fff; }
+
+/* 纵向排列的内容块：列宽不超过容器，表格和长文本在块内换行。 */
+.listening-reference, .listening-block, .listening-section, .listening-question, .listening-notice,
+.listening-capture, .listening-list, .listening-transcript, .listening-captures,
+.listening-report > .ant-card-body { display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.listening-reference { gap: 12px; }
+.listening-reference .ant-descriptions-item-label { width: 108px; }
+.listening-block { gap: 6px; }
+.listening-list { gap: 8px; margin: 0; padding-left: 20px; }
+.listening-section { gap: 12px; }
+.listening-section > .toolbar { margin-bottom: 0; }
+/* 提问建议卡片：准备的提问和现场补充提问各占一栏，栏名后面是待处理的条数。 */
+.listening-questions-card > .ant-card-head { padding-bottom: 0; }
+.listening-questions-card > .ant-card-head .ant-tabs-nav { margin-bottom: 0; }
+.listening-tab-label { display: inline-flex; align-items: center; gap: 6px; }
+.listening-tab-count { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: var(--brand); color: #fff; font-size: 12px; font-weight: 600; line-height: 20px; text-align: center; }
+
+.listening-question { gap: 8px; padding: 12px 14px; border: 1px solid #d8e8e5; border-radius: 8px; background: #fbfdfd; }
+.listening-question.handled { border-color: var(--line); background: #fafafa; }
+.listening-question.handled .listening-question-text { color: var(--text-secondary); font-weight: 500; }
+.listening-question-head { display: flex; align-items: flex-start; gap: 8px; }
+.listening-question-number { flex: none; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--brand); color: #fff; font-size: 12px; font-weight: 600; line-height: 22px; text-align: center; }
+.listening-question.handled .listening-question-number { background: #c3cfcb; }
+.listening-question-text { color: #172522; font-size: 15px; font-weight: 600; line-height: 1.55; }
+/* 理由和引用是问题的依据：完整显示，字号略小，和问题本身分开。 */
+.listening-question-basis { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; font-size: 13px; line-height: 1.6; }
+.listening-question-basis > .evidence-text > .ant-typography { margin-right: 6px; }
+.listening-question-basis .evidence-quote { margin: 0; padding: 6px 10px; font-size: 13px; }
+.listening-question-basis .evidence-source { margin-top: 0; font-size: 12px; }
+.listening-question-actions { margin-top: 2px; }
+
+.listening-notice { gap: 10px; padding: 14px 16px; border: 1px solid #e1e9e7; border-radius: 8px; background: #fbfcfc; }
+.listening-notice .ant-typography { margin-bottom: 0; }
+.listening-consent-record > .ant-collapse-item > .ant-collapse-header { padding-inline: 0 !important; color: var(--text-secondary); overflow-wrap: anywhere; }
+.listening-transcript-title { margin-top: 4px; }
+.listening-transcript { gap: 8px; margin: 0; padding: 0; list-style: none; }
+.listening-transcript .listening-line { display: flex; margin: 0; }
+.listening-line-body { min-width: 0; flex: 1; }
+
+.listening-captures { gap: 12px; margin: 0; padding: 0; list-style: none; }
+.listening-capture { gap: 8px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.listening-capture-hint { font-size: 12px; }
+.listening-speaker-select { width: 220px; max-width: 100%; }
+
+.listening-report > .ant-card-body { gap: 14px; }
+.listening-report .listening-report-next { margin: 0; }
+.listening-speech-notice { margin-bottom: 6px; color: #8a5a00; }
+.listening-turns { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 6px 0 0; padding: 0; list-style: none; }
+.listening-turn { padding-left: 10px; border-left: 3px solid var(--line); }
+.listening-turn.role-candidate { border-left-color: #7cc5a9; }
+.listening-turn.role-interviewer { border-left-color: #8fb6e8; }
+.listening-turn-select { min-width: 108px; }
+.listening-roles-note { display: block; font-size: 12px; }
+.listening-report-wait { margin-top: 0; }

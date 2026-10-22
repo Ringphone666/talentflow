@@ -1,0 +1,14 @@
+# TalentFlow人岗匹配与AI面试一体化系统 · 后端依赖
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+SQLAlchemy==2.0.43
+pydantic==2.11.7
+python-multipart==0.0.20
+httpx==0.28.1
+websockets==17.0.1
+# 人岗匹配：简历/岗位说明书解析与报告导出
+PyMuPDF>=1.24,<2
+python-docx>=1.1,<2
+python-dotenv>=1.0,<2
+# 测试
+pytest==8.4.1

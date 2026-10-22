@@ -1,0 +1,30 @@
+/* 线下集中面试现场入口：共用设备、触摸操作，按钮和文字放大。 */
+.onsite-page .onsite-card { max-width: 980px; text-align: left; }
+.onsite-page .onsite-card > .ant-card-body { align-items: stretch; gap: 18px; }
+.onsite-page .onsite-loading { min-height: 40vh; display: grid; place-content: center; justify-items: center; gap: 16px; }
+.onsite-page .onsite-heading { text-align: center; }
+.onsite-page .onsite-heading h2.ant-typography { margin: 0 0 6px; }
+.onsite-page .onsite-heading .ant-typography { overflow-wrap: anywhere; }
+.onsite-page .onsite-batch { margin: 0; font-size: 16px; }
+.onsite-page .onsite-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.onsite-page .onsite-toolbar .ant-input-affix-wrapper { flex: 1 1 260px; min-width: 0; height: 48px; font-size: 16px; }
+.onsite-page .onsite-toolbar .ant-btn { height: 48px; padding-inline: 20px; font-size: 16px; }
+.onsite-page .onsite-count { color: var(--text-secondary); }
+.onsite-page .onsite-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.onsite-page .onsite-candidate { width: 100%; min-height: 104px; display: grid; align-content: center; justify-items: start; gap: 6px; padding: 16px 18px; border: 1px solid #cfe5df; border-radius: 12px; color: #222; background: #fff; text-align: left; cursor: pointer; transition: border-color .2s, box-shadow .2s; }
+.onsite-page .onsite-candidate:hover:not(:disabled),
+.onsite-page .onsite-candidate:focus-visible { border-color: var(--brand); box-shadow: var(--shadow-md); outline: none; }
+.onsite-page .onsite-candidate:disabled { cursor: not-allowed; color: var(--text-tertiary); border-color: var(--line); background: #f7f8f8; }
+.onsite-page .onsite-candidate-name { font-size: 20px; font-weight: 600; line-height: 28px; overflow-wrap: anywhere; }
+.onsite-page .onsite-candidate-code { color: var(--text-secondary); font-size: 13px; overflow-wrap: anywhere; }
+.onsite-page .onsite-candidate:disabled .onsite-candidate-code { color: var(--text-tertiary); }
+.onsite-page .onsite-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.onsite-page .onsite-actions .ant-btn { min-width: 160px; height: 48px; font-size: 16px; }
+.onsite-confirm .ant-modal-title { font-size: 20px; line-height: 30px; overflow-wrap: anywhere; }
+.onsite-confirm .ant-modal-body { font-size: 16px; }
+.onsite-confirm .ant-modal-footer .ant-btn { min-width: 120px; height: 48px; font-size: 16px; }
+@media (max-width: 767px) {
+  .onsite-page .onsite-list { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .onsite-page .onsite-candidate { min-height: 92px; padding: 12px 14px; }
+  .onsite-page .onsite-candidate-name { font-size: 18px; }
+}

@@ -1,0 +1,25 @@
+.sensitive-rules-editor {
+  display: grid;
+  gap: 16px;
+}
+
+.sensitive-rules-editor .ant-typography,
+.sensitive-rules-editor .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.sensitive-rule-keywords {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 10px;
+}
+
+.sensitive-rule-keyword {
+  display: flex;
+  min-width: 0;
+  gap: 4px;
+}
+
+.sensitive-rule-keyword .ant-input {
+  min-width: 0;
+}

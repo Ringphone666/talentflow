@@ -1,0 +1,132 @@
+/* 基础数据（岗位库、人员库）页面的私有样式。颜色沿用 styles.css 中的变量。 */
+
+.full-width { width: 100%; }
+.nowrap { white-space: nowrap; }
+.plain-list { margin: 0; padding-left: 20px; }
+.plain-list li { margin: 2px 0; overflow-wrap: anywhere; }
+.field-hint { margin: 4px 0 8px !important; font-size: 13px; }
+.picker-hint { margin-left: 12px; }
+.switch-label { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+.library-search { width: 280px; max-width: 100%; }
+.library-filter { width: 180px; max-width: 100%; }
+.library-row-muted > td { color: var(--text-secondary); background: #fafafa; }
+.job-name { overflow-wrap: anywhere; }
+
+/* 列表：表头不折行，操作列的链接紧凑排列 */
+.library-table .ant-table-thead > tr > th { white-space: nowrap; }
+.row-actions .ant-btn, .row-actions-inline .ant-btn { padding-inline: 0; height: 24px; }
+.row-actions-inline { gap: 12px !important; }
+.library-table .ant-table-expanded-row > td { background: #fafcfb !important; }
+
+/* 进行中状态 */
+.library-progress { display: flex; align-items: center; gap: 12px; padding: 12px 0; overflow-wrap: anywhere; }
+.library-progress-large { gap: 20px; padding: 32px 8px; }
+.library-progress p.ant-typography { margin: 6px 0 0; }
+
+/* 已选文件 */
+.file-list { list-style: none; margin: 12px 0 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; }
+.file-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 8px 12px; }
+.file-row + .file-row { border-top: 1px solid var(--line); }
+.file-row-icon { color: var(--text-tertiary); }
+.file-row-name { flex: 1 1 220px; min-width: 0; overflow-wrap: anywhere; }
+.file-row-size { flex: none; font-size: 12px; }
+.file-row-extra { flex: 0 1 300px; min-width: 200px; }
+.assignment-select { width: 100%; }
+
+/* 岗位表单 */
+.job-form-section { margin: 20px 0 12px !important; padding-left: 10px; border-left: 3px solid var(--brand); }
+.job-extra-collapse { margin-bottom: 8px; }
+.job-extra-collapse > .ant-collapse-item > .ant-collapse-header { padding-inline: 0 !important; }
+.job-extra-collapse > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box { padding: 4px 0 0 !important; }
+.extra-section-row { display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 3fr) 32px; gap: 12px; align-items: start; margin-bottom: 12px; }
+
+.dimension-table { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.dimension-row { display: grid; grid-template-columns: minmax(140px, 1.2fr) 112px minmax(180px, 2fr) minmax(140px, 1.2fr) 32px; gap: 12px; align-items: start; padding: 12px; }
+.dimension-row + .dimension-row { border-top: 1px solid var(--line); }
+.dimension-head { padding-block: 10px; background: #f5f7fa; font-weight: 600; }
+.dimension-cell { min-width: 0; }
+.dimension-cell-label { display: none; margin-bottom: 4px; color: var(--text-secondary); font-size: 12px; }
+.dimension-weight { width: 100%; }
+.dimension-errors { margin-top: 8px; color: var(--danger); }
+.dimension-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 0 8px; }
+.dimension-total { margin: 0; padding: 4px 10px; font-size: 13px; white-space: normal; }
+
+.basis-list { display: grid; gap: 12px; margin-top: 8px; }
+.basis-item { padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; }
+
+.draft-review { display: grid; gap: 12px; }
+.draft-review > .ant-collapse > .ant-collapse-item > .ant-collapse-header { padding-inline: 0 !important; }
+.draft-source { margin: 0 !important; overflow-wrap: anywhere; }
+.draft-actions { display: flex; justify-content: flex-end; padding-top: 8px; border-top: 1px solid var(--line); }
+
+/* 岗位详情 */
+.drawer-subtitle { font-size: 13px; font-weight: 400; }
+.job-drawer .ant-drawer-title, .person-drawer .ant-drawer-title { white-space: normal; overflow-wrap: anywhere; }
+.job-view { display: grid; gap: 20px; }
+.job-view h5.ant-typography { margin: 0 0 8px; }
+.job-view-note { margin: 0 !important; }
+.job-text-list { margin: 0; padding-left: 22px; }
+.job-text-list li { margin: 4px 0; }
+.keyword-tag { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+.tab-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin-bottom: 14px; }
+
+/* 面试评价标准 */
+.standard-tab h5.ant-typography { margin: 0 0 8px; }
+.standard-tab h5.standard-heading { margin-top: 24px; }
+.standard-actions { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+.standard-card .ant-typography { overflow-wrap: anywhere; }
+.standard-card h4.ant-typography { margin: 0 0 8px; }
+.standard-levels { display: grid; gap: 6px; margin: 10px 0 0; }
+.standard-levels > div { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px; }
+.standard-levels dt { color: var(--brand); font-weight: 500; }
+.standard-levels dd { margin: 0; color: var(--text-secondary); }
+.standard-basis { margin: 10px 0 0 !important; }
+.advice-idle { margin: 0 !important; }
+.advice-note { margin: 0 0 12px !important; }
+.advice-item { display: grid; gap: 6px; width: 100%; min-width: 0; }
+.advice-guardrails { margin-top: 8px; color: var(--text-secondary); }
+.material-item { display: grid; gap: 6px; width: 100%; min-width: 0; }
+.material-name { overflow-wrap: anywhere; }
+.material-preview { color: var(--text-secondary); }
+
+/* 人员库 */
+.batch-panel > .ant-card-body { padding: 16px; }
+.batch-filters { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.batch-filters .ant-picker, .batch-filters .ant-select { width: 100%; }
+.batch-list { margin-top: 8px; }
+.batch-list .batch-item { display: flex; align-items: flex-start; gap: 8px; cursor: default; }
+.batch-list .batch-item > .ant-checkbox-wrapper { margin-top: 2px; }
+.library-batch-select { flex: 1; min-width: 0; display: grid; gap: 4px; padding: 0; border: 0; color: inherit; background: transparent; text-align: left; cursor: pointer; }
+.library-batch-select:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; border-radius: 4px; }
+.batch-title { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.batch-name { font-weight: 600; overflow-wrap: anywhere; }
+.batch-counts { display: flex; flex-wrap: wrap; gap: 0 12px; font-size: 13px; }
+.batch-counts > span { white-space: nowrap; }
+.library-batch-meta { color: var(--text-tertiary); font-size: 12px; overflow-wrap: anywhere; }
+.library-batch-actions { flex: none; }
+.person-panel > .ant-card-head .ant-card-head-wrapper { flex-wrap: wrap; gap: 8px 12px; padding-block: 10px; }
+.person-panel > .ant-card-head .ant-card-head-title { white-space: normal; }
+.person-panel > .ant-card-head .ant-card-extra { margin-inline-start: auto; }
+.person-detail-row { display: grid; gap: 8px; }
+.person-summary-line { margin: 0; }
+.person-summary { margin-bottom: 12px; }
+.person-fields .ant-descriptions-item-label { width: 132px; }
+.field-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 6px; }
+.field-meta .evidence-source { margin-top: 0; }
+.evidence-item { display: grid; gap: 4px; width: 100%; min-width: 0; }
+
+@media (max-width: 767px) {
+  .dimension-head { display: none; }
+  .dimension-cell-label { display: block; }
+  .dimension-row { grid-template-columns: minmax(0, 1fr) 112px 32px; align-items: end; }
+  .dimension-cell-name { grid-column: 1; grid-row: 1; }
+  .dimension-cell-weight { grid-column: 2; grid-row: 1; }
+  .dimension-remove { grid-column: 3; grid-row: 1; }
+  .dimension-cell-keywords, .dimension-cell-negative { grid-column: 1 / -1; }
+  .extra-section-row { grid-template-columns: minmax(0, 1fr) 32px; }
+  .extra-section-row > :nth-child(1) { grid-column: 1; grid-row: 1; }
+  .extra-section-row > :nth-child(3) { grid-column: 2; grid-row: 1; }
+  .extra-section-row > :nth-child(2) { grid-column: 1 / -1; }
+  .library-search, .library-filter { width: 100%; }
+  .file-row-extra { flex-basis: 100%; }
+}

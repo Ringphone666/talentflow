@@ -1,0 +1,54 @@
+.candidate-page .candidate-shell { width: min(calc(100% - 32px), 1120px); margin: 18px auto; min-width: 0; }
+.candidate-page .candidate-header { min-height: 72px; height: auto; padding-block: 12px; flex-shrink: 0; }
+.candidate-page .candidate-steps { margin-bottom: 18px; }
+.candidate-page .interview-stage { gap: 16px; align-items: stretch; }
+.candidate-page .interview-stage > * { min-width: 0; }
+.candidate-page .interview-topline { padding: 10px 16px; gap: 16px; }
+.candidate-page .interview-topline h3 { margin-block: 4px 0; }
+.candidate-page .question-card { min-height: 320px; border-radius: 12px; box-shadow: var(--shadow-sm); }
+.candidate-page .question-card .ant-card-body { padding: 28px; }
+.candidate-page .ai-interviewer { margin-bottom: 16px; }
+.candidate-page .question-text { font-size: clamp(20px, 1.6vw, 26px) !important; line-height: 1.65 !important; font-weight: 600; overflow-wrap: anywhere; }
+.candidate-page .recording-card, .candidate-page .followup-card { display: flex; flex-direction: column; border-radius: 12px; box-shadow: var(--shadow-sm); }
+.candidate-page .recording-card .ant-card-body,
+.candidate-page .followup-card .ant-card-body { padding: 28px; gap: 16px; min-width: 0; flex: 1; justify-content: center; }
+.candidate-page .followup-card .ant-alert-description,
+.candidate-page .followup-card .ant-typography { overflow-wrap: anywhere; }
+.candidate-page .recording-status { flex-wrap: wrap; justify-content: center; overflow-wrap: anywhere; }
+.candidate-page .recording-alert { width: 100%; text-align: left; }
+.candidate-page .recording-alert .ant-alert-message { font-weight: 600; }
+.candidate-page .recording-alert .ant-alert-description { overflow-wrap: anywhere; }
+.candidate-page .recording-help { font-size: 12px; }
+.candidate-page .recording-card .ant-btn,
+.candidate-page .followup-card .ant-btn { max-width: 100%; white-space: normal; height: auto; min-height: 40px; }
+.candidate-page .live-transcript { width: 100%; border-radius: 6px; padding: 10px 12px; background: #f2f9f8; text-align: left; }
+.candidate-page .live-transcript-text { max-height: 120px; overflow-y: auto; overflow-wrap: anywhere; white-space: pre-wrap; margin-top: 4px; }
+.candidate-page .live-transcript-notice { margin-top: 4px; color: #8a5a00; font-size: 13px; }
+.candidate-page .audio-input-feedback { width: 100%; text-align: left; }
+.candidate-page .audio-input-label { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; font-size: 13px; }
+.candidate-page .audio-input-label > span:last-child { margin-left: auto; color: var(--text-secondary); font-size: 12px; }
+.candidate-page .audio-input-meter { height: 8px; background: #e7eeeb; border-radius: 6px; overflow: hidden; }
+.candidate-page .audio-input-meter > span { display: block; height: 100%; background: var(--brand); border-radius: inherit; }
+.candidate-page .audio-input-feedback > .ant-typography { display: block; margin-top: 6px; font-size: 12px; }
+.candidate-page .countdown-wrap { display: grid; justify-items: stretch; gap: 3px; }
+.candidate-page .countdown-hint { font-size: 12px; color: #666; text-align: center; }
+.candidate-page .candidate-footer { padding: 10px 16px; }
+/* 采集须知由后端下发，完整显示，不在卡片内再套一层滚动。 */
+.candidate-page .consent-copy { max-height: none; overflow: visible; }
+.candidate-page .consent-copy .ant-typography:last-child { margin-bottom: 0; }
+@media (min-width: 960px) {
+  .candidate-page .interview-stage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .candidate-page .interview-topline { grid-column: 1 / -1; }
+  .candidate-page .question-card { height: 100%; }
+}
+@media (max-width: 767px) {
+  .candidate-page .candidate-shell { width: calc(100% - 24px); margin: 14px auto; }
+  .candidate-page .candidate-steps { padding: 0; overflow-x: auto; overflow-y: hidden; }
+  .candidate-page .interview-topline { grid-template-columns: minmax(0, 1fr) 110px; gap: 8px; }
+  .candidate-page .countdown-wrap { grid-column: 2; grid-row: 1; }
+  .candidate-page .countdown { grid-column: auto; grid-row: auto; }
+  .candidate-page .question-card { min-height: 180px; }
+  .candidate-page .question-card .ant-card-body { padding: 18px 16px; }
+  .candidate-page .recording-card .ant-card-body,
+  .candidate-page .followup-card .ant-card-body { padding: 18px 14px; }
+}
